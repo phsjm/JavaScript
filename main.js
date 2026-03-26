@@ -1,7 +1,9 @@
 'use strict';
 
-function prices (unitPrice, n) {
-    return unitPrice * n;
-}
-
-console.log(prices(100, 13));
+const e = document.getElementById('button1');
+e.addEventListener('click', () => {
+    const elements = document.getElementsByTagName('div');
+    for (let i = 0; i < elements.length; i++) {
+        console.log(elements[i].innerText);
+    }
+});
