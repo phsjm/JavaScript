@@ -1,7 +1,10 @@
 'use strict';
 
-const e = document.getElementById('button1');
+const e = document.getElementById('button');
 e.addEventListener('click', () => {
-    const elements = document.getElementsByName('result');
-    console.log(elements[0].value);
+    const elements = document.getElementsByClassName('foo');
+    for (let i = 0; i < elements.length; i++) {
+        console.log(elements[i].innerText);
+    }
+
 });
