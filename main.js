@@ -1,4 +1,5 @@
 'use strict';
-window.onload = () => {
-    console.log('load event!');
-}
+const eventButton = document.getElementById('button');
+eventButton.addEventListener('click', () => {
+    console.log('Clicked!');
+}, false);
