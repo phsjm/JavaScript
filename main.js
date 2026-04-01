@@ -2,9 +2,9 @@
 
 const e = document.getElementById('button');
 e.addEventListener('click', () => {
-    const elements = document.getElementsByClassName('foo');
-    for (let i = 0; i < elements.length; i++) {
-        console.log(elements[i].innerText);
-    }
-
-});
+    const li = document.createElement('li');
+    const text = document.createTextNode('test');
+    li.appendChild(text);
+    const list = document.getElementById('list');
+    list.appendChild(li);
+}, false);
